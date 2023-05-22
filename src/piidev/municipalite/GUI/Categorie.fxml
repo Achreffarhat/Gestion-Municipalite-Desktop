@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="652.0" prefWidth="787.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="piidev.municipalite.GUI.CategorieController">
+   <children>
+      <TextField fx:id="lb" layoutX="189.0" layoutY="283.0" prefHeight="69.0" prefWidth="149.0" promptText="entrez la catégorie" />
+      <Button fx:id="aj" layoutX="139.0" layoutY="437.0" mnemonicParsing="false" onAction="#ajt" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #18689e;" text="Ajouter" textFill="#fdfbfb" />
+      <TableView fx:id="affiche" layoutX="421.0" layoutY="250.0" prefHeight="237.0" prefWidth="337.0" style="-fx-background-color: #c6ecf9;">
+        <columns>
+          <TableColumn fx:id="lbc" prefWidth="317.0" text="Categories" />
+        </columns>
+      </TableView>
+      <Button fx:id="btntrier" layoutX="515.0" layoutY="203.0" mnemonicParsing="false" onAction="#affichrtTri" prefHeight="26.0" prefWidth="149.0" style="-fx-background-color: #18689e;" text="Trier" textFill="#f7f5f5" />
+      <Separator layoutX="-10.0" layoutY="79.0" prefHeight="0.0" prefWidth="779.0" style="-fx-background-color: #006400;" />
+      <Text fill="#18689e" layoutX="203.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion Catégorie" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="80.0" fitWidth="83.0" layoutX="144.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/voiture-electrique.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="71.0" layoutY="508.0" onMouseClicked="#modifier" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/compose.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="139.0" layoutY="140.0" prefWidth="200.0" />
+      <Separator layoutX="84.0" layoutY="406.0" prefWidth="200.0" />
+      <Separator layoutX="372.0" layoutY="90.0" orientation="VERTICAL" prefHeight="530.0" prefWidth="9.0" style="-fx-background-color: #006400;" />
+      <ImageView fitHeight="67.0" fitWidth="61.0" layoutX="645.0" layoutY="512.0" onMouseClicked="#select" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/touchscreen.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="41.0" layoutX="128.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Cat.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="469.0" layoutY="516.0" onMouseClicked="#excelmth" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/excel.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="61.0" fitWidth="61.0" layoutX="242.0" layoutY="508.0" onMouseClicked="#supp" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/delete.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="date21" layoutX="160.0" layoutY="98.0" prefHeight="48.0" prefWidth="194.0" text="Ajout Categorie :" textFill="#1b1b1b">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="date211" layoutX="14.0" layoutY="293.0" prefHeight="48.0" prefWidth="106.0" text="Categorie :" textFill="#1b1b1b">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="date212" layoutX="481.0" layoutY="98.0" prefHeight="48.0" prefWidth="218.0" text="Liste Des Categories :" textFill="#1b1b1b">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="481.0" layoutY="144.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

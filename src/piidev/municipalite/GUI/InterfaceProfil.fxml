@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="Dashoard.css" prefHeight="652.0" prefWidth="787.0" styleClass="dash__side-bar" stylesheets="@Dashoard.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="piidev.municipalite.GUI.InterfaceProfilController">
+   <children>
+      <ImageView fitHeight="140.0" fitWidth="210.0" layoutX="262.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/header.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="186.0" layoutY="154.0" prefHeight="47.0" prefWidth="362.0" text="Modifiez Votre Profil">
+         <font>
+            <Font name="Arial" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailTextfield" layoutX="250.0" layoutY="241.0" prefHeight="37.0" prefWidth="236.0" />
+      <TextField fx:id="prenomTextfield" layoutX="254.0" layoutY="366.0" prefHeight="37.0" prefWidth="236.0" />
+      <TextField fx:id="nomTextfield" layoutX="253.0" layoutY="308.0" prefHeight="37.0" prefWidth="236.0" />
+      <TextField fx:id="adresseTextfield" layoutX="254.0" layoutY="432.0" prefHeight="37.0" prefWidth="236.0" />
+      <TextField fx:id="telTextfield" layoutX="258.0" layoutY="494.0" prefHeight="37.0" prefWidth="236.0" />
+      <Button fx:id="btn_modifier" layoutX="314.0" layoutY="563.0" mnemonicParsing="false" onAction="#ModifierUser" prefHeight="29.0" prefWidth="124.0" text="Modifier" />
+      <ImageView fitHeight="54.0" fitWidth="64.0" layoutX="24.0" layoutY="14.0" onMouseClicked="#GoToUser" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/back.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="prenom" layoutX="130.0" layoutY="245.0" prefHeight="30.0" prefWidth="70.0" text="Email :" textFill="#2c2a2a">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="prenom2" layoutX="128.0" layoutY="311.0" prefHeight="30.0" prefWidth="70.0" text="Nom :" textFill="#2c2a2a">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="prenom3" layoutX="117.0" layoutY="370.0" prefHeight="30.0" prefWidth="92.0" text="Prenom :" textFill="#2c2a2a">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="prenom4" layoutX="130.0" layoutY="498.0" prefHeight="30.0" prefWidth="70.0" text="Tel :" textFill="#2c2a2a">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="prenom5" layoutX="122.0" layoutY="436.0" prefHeight="30.0" prefWidth="83.0" text="Adresse :" textFill="#2c2a2a">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_pw" layoutX="531.0" layoutY="563.0" mnemonicParsing="false" onAction="#ModifierPw" prefHeight="29.0" prefWidth="210.0" text="Modifier mot de passe" />
+      <ImageView fitHeight="85.0" fitWidth="116.0" layoutX="594.0" layoutY="456.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/sms.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

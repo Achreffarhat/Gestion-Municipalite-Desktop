@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="dashoard.css" fx:id="recpane" onMouseClicked="#ajouterReclamation" prefHeight="659.0" prefWidth="787.0" styleClass="dash__side-bar" stylesheets="@Dashoard.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="piidev.municipalite.GUI.AjoutRecController">
+   <children>
+      <Label fx:id="nom" layoutX="125.0" layoutY="139.0" prefHeight="17.0" prefWidth="109.0" text="Nom">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="prenom" layoutX="102.0" layoutY="198.0" prefHeight="17.0" prefWidth="109.0" text="Prenom">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id_nom" layoutX="244.0" layoutY="129.0" prefHeight="40.0" prefWidth="300.0" />
+      <Label fx:id="date" layoutX="118.0" layoutY="490.0" prefHeight="17.0" prefWidth="100.0" text="Date">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id_prenom" layoutX="244.0" layoutY="188.0" prefHeight="40.0" prefWidth="300.0" />
+      <Button layoutX="306.0" layoutY="573.0" onAction="#ajouterReclamation" onMouseClicked="#ajouterReclamation" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: #26d094;" text="Ajouter" textFill="#f0fff9">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label alignment="TOP_CENTER" layoutX="177.0" layoutY="21.0" prefHeight="69.0" prefWidth="434.0" text="Ajouter  Reclamation" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="tel" layoutX="130.0" layoutY="84.0" prefHeight="30.0" prefWidth="76.0" text="Tel">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="email" layoutX="118.0" layoutY="256.0" prefHeight="30.0" prefWidth="76.0" text="Email">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="desc" layoutX="90.0" layoutY="378.0" prefHeight="30.0" prefWidth="109.0" text="Description" textFill="#171717">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="id_email" layoutX="244.0" layoutY="251.0" prefHeight="40.0" prefWidth="300.0" />
+      <TextField fx:id="id_description" layoutX="246.0" layoutY="327.0" prefHeight="116.0" prefWidth="296.0" />
+      <TextField fx:id="id_tel" layoutX="244.0" layoutY="79.0" prefHeight="40.0" prefWidth="300.0" />
+      <DatePicker fx:id="dpdate" layoutX="244.0" layoutY="480.0" prefHeight="40.0" prefWidth="300.0" />
+   </children>
+</AnchorPane>
